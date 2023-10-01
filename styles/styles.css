@@ -1,0 +1,82 @@
+body {
+    background: url("../img/background.jpg") no-repeat fixed center top; /* Image de fond */
+    background-size: auto; /* Ajuste la taille de l'image de fond */
+    background-size: cover; /* Ajuste la taille de l'image de fond */
+    padding-top: 20px; /* Ajoute un peu de marge en haut de la page */
+  }
+  
+  body {
+    margin: 0; /* Supprime les marges par défaut */
+    font-family: Arial; /* Utilise la police Arial */
+    text-align: center; /* Centre le texte */
+    color: white; /* Couleur du texte */
+  }
+  
+  a:visited {
+    color: purple; /* Couleur des liens visités */
+  }
+  
+  .grid-item p {
+    position: relative; /* Positionne le paragraphe par rapport à son conteneur parent (.grid-item) */
+  }
+  
+  .grid-item p::before {
+    content: "Je veux voir la réponse"; /* Texte du masque */
+    position: absolute; /* Positionne le masque par rapport au paragraphe */
+    top: 0; /* Positionne le masque sur tout le contenu */
+    left: 0; /* Positionne le masque sur tout le contenu */
+    right: 0; /* Positionne le masque sur tout le contenu */
+    bottom: 0; /* Positionne le masque sur tout le contenu */
+    border-radius: 10px; /* Arrondi les bords du masque */
+    color: black; /* Couleur du texte */
+    background-color: whitesmoke; /* Couleur du masque */
+    opacity: 1; /* Opacité du masque (ajustez selon vos préférences) */
+    transition: opacity 0.3s ease; /* Ajoute une transition douce pour le spoiler */
+    pointer-events: none; /* Empêche le masque de bloquer les clics sur le contenu */
+    display: flex; /* Utilisez flexbox pour centrer verticalement */
+    justify-content: center; /* Centrez le contenu horizontalement */
+    align-items: center; /* Centrez le contenu verticalement */
+  }
+  
+  .grid-item p:hover::before {
+    opacity: 0; /* Lorsque survolé, le masque devient transparent */
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8); /* Fond blanc semi-transparent */
+    padding: 20px; /* Petite marge intérieure */
+    border-radius: 10px; /* Coins arrondis */
+    margin: 10px; /* Petite marge extérieure */
+    text-align: left; /* Alignez le texte à gauche pour une meilleure lisibilité */
+    color: black; /* Couleur du texte */
+  }
+  
+  .grid-container {
+    max-width: 800px; /* Limitez la largeur du contenu pour une meilleure lisibilité */
+    margin: 0 auto; /* Centrer le contenu */
+  }
+  
+  
+  .grid-item {
+    text-align: center; /* Centrer le texte */
+  }
+  
+  .grid-item img {
+    max-width: 100%; /* L'image ne dépassera pas la largeur de son conteneur parent (.grid-item) */
+    height: auto; /* Maintient le rapport hauteur/largeur pour éviter la distorsion */
+  }
+  
+  button {
+    background-color: lightyellow; /* Couleur de fond du bouton */
+    color: black; /* Couleur du texte */
+    border: none; /* Supprime les bordures */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 10px 20px; /* Ajoute un peu de marge intérieure */
+    margin-bottom: 10px; /* Ajoute un peu de marge extérieure */
+  }
+  
+  button:hover {
+    background-color: lightgreen; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte */
+  }
+  
